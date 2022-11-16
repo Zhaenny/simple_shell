@@ -21,7 +21,6 @@ char **get_environ(info_t *info)
  * _unsetenv - Remove an environment variable
  * @info: Structure containing potential arguments. Used to maintain
  * constant function prototype.
- *
  * Return: 1 on delete, 0 otherwise
  * @var: the string env var property
  */
@@ -41,7 +40,7 @@ int _unsetenv(info_t *info, char *var)
 		{
 			info->env_changed = delete_node_at_index(&(info->env), i);
 			i = 0;
-			node = info->env;#
+			node = info->env;
 				continue;
 		}
 		node = node->next;
