@@ -1,4 +1,4 @@
-nclude "shell.h"
+#include "shell.h"
 
 /**
  * is_cmd - determines if a file is an executable command
@@ -18,7 +18,7 @@ int is_cmd(info_t *info, char *path)
 	if (st.st_mode & S_IFREG)
 	{
 		return (1);
-											}
+	}
 	return (0);
 }
 
